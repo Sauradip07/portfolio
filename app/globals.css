@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	--contour-color: rgba(0, 0, 0, 0.05);
+
+	/* Theme colours */
+	--primary-color: #000000;
+	--secondary-color: #ffffff;
+	--dark-grey: #3c3c43;
+	--medium-grey: #666666;
+	--light-grey: #dedede;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+*::-webkit-scrollbar {
+	/* display: none; */
+}
+html {
+	background-color: var(--secondary-color);
+	overflow-x: hidden;
+}
+
+main {
+	max-width: calc(100% - 15rem);
+	height: calc(100vh - 98px);
+	margin: auto;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+main::-webkit-scrollbar {
+	display: none;
+}
+@media screen and (max-width: 1300px) {
+	main {
+		max-width: calc(100% - 10rem);
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	main {
+		display: block;
+	}
+}
+@media screen and (max-width: 700px) {
+	main {
+		max-width: calc(100% - 2.5rem);
+		height: unset;
+	}
+	#experiences {
+		max-width: 100%;
+	}
+}
