@@ -97,21 +97,21 @@ export const MyPortfolio = [
 		content: `Treklers is a Taxi Booking App that allows users to book a cab
 		and track the driver in real-time. It has several options live
 		location and emergency calling.`,
-		poster: '/assets/images/portfolio/treklers.webp',
+		poster: '/assets/images/portfolio/commingsoon.avif',
 	},
 	{
 		name: 'Placement Management System',
 		content: `Made to keep track of the placement process, by ensuring proper
 		communication between the placement coordinators and placement
 		cell.`,
-		poster: '/assets/images/portfolio/pms.webp',
+		poster: '/assets/images/portfolio/commingsoon.avif',
 	},
 	{
 		name: 'UV Downloader',
 		content: `UV Downloader is a video downloader app which allows users to
 		download videos from various platforms like Youtube, Facebook,
 		Instagram, Twitter, etc.`,
-		poster: '/assets/images/portfolio/uvd.webp',
+		poster: '/assets/images/portfolio/commingsoon.avif',
 	},
 ];
 

@@ -35,9 +35,10 @@
 .portfolioItem {
 	height: 350px;
 	margin: 1rem 1rem;
-	width: 350px;
+	width: 450px;
 	border-radius: 1rem;
 	background: #ddd;
+	object-fit: contain;
 	overflow: hidden;
 }
 

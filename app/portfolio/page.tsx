@@ -17,7 +17,7 @@ const Portfolio = () => {
 					<section className={styles.portfolio}>
 						{MyPortfolio.map(({ name, content, poster }, index) => (
 							<div key={index} className={styles.portfolioItem}>
-								<Image src={poster} alt={name} width={300} height={200} />
+								<Image src={poster} alt={name} width={300} height={200}/>
 							</div>
 						))}
 					</section>
