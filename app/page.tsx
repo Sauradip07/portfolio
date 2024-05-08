@@ -1,8 +1,25 @@
+"use client"
 import Image from 'next/image';
 import ScreenWrapper from './components/screenwrapper/screenwrapper';
+
+import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
 
 const Home = () => {
+
+	const router = useRouter();
+
+	const handleClick = () => {
+		router.push('/contact');
+	};
+
+	const downloadResume = () => {
+		const googleDriveLink = 'https://drive.google.com/file/d/18pGCB2JMQ5YSvjw8XzdoMCU7FG8LVQZp/view?usp=sharing';
+
+		// Open the Google Drive link in a new tab
+		window.open(googleDriveLink, '_blank');
+	};
+	
 	return (
 		<ScreenWrapper animateSplash={false} animateNavbar={true}>
 			<section className={styles.wrapper}>
@@ -28,8 +45,10 @@ const Home = () => {
 							crafting solutions that sparkle with simplicity and elegance
 						</p>
 						<div className={styles.btnContainer}>
-							<button className={styles.solidBtn}>Download Resume</button>
-							<button className={styles.outlineBtn}>Contact Me</button>
+							
+							<button className={styles.solidBtn} onClick={downloadResume}>Download Resume</button> 
+							
+							<button className={styles.outlineBtn} onClick={handleClick}>Contact Me</button>
 						</div>
 					</div>
 				</section>
