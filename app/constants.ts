@@ -10,43 +10,43 @@ export const NavbarUrls = {
 
 export const MyExperiences = [
 	{
-		title: 'Tech Particle',
-		subTitle: 'React Developer',
-		date: 'April 2021 - June 2021',
+		title: 'Winter Of Code',
+		subTitle: 'Javascript Developer',
+		date: 'March 2023 - May 2023',
 	},
 	{
-		title: 'K Plus Classes',
+		title: 'Loream Ipsum',
 		subTitle: 'Full Stack Developer',
 		date: 'Dec 2021 - March 2022',
 	},
 	{
-		title: 'Triunits',
-		subTitle: 'Android Developer',
+		title: 'Loream Ipsum',
+		subTitle: 'Developer',
 		date: 'Jan 2022 - May 2022',
 	},
 	{
-		title: 'Tricket',
-		subTitle: 'Flutter Developer',
+		title: 'Loream Ipsum',
+		subTitle: 'Developer',
 		date: 'April 2022 - May 2022',
 	},
+	// {
+	// 	title: 'Loream Ipsum',
+	// 	subTitle: 'Developer',
+	// 	date: 'May 2022 - Present',
+	// },
+	// {
+	// 	title: 'Loream Ipsum',
+	// 	subTitle: 'Intern',
+	// 	date: 'May 2023 - July 2023',
+	// },
+	// {
+	// 	title: 'Loream Ipsum',
+	// 	subTitle: 'Open Source Contributor',
+	// 	date: 'May 2023 - Oct 2023',
+	// },
 	{
-		title: 'Capricon Technology',
-		subTitle: 'Cross Platform App Developer',
-		date: 'May 2022 - Present',
-	},
-	{
-		title: 'Reliance Industries Limited',
-		subTitle: 'Summer Intern',
-		date: 'May 2023 - July 2023',
-	},
-	{
-		title: 'Google Summer of Code',
-		subTitle: 'Open Source Contributor',
-		date: 'May 2023 - Oct 2023',
-	},
-	{
-		title: 'Cuemath',
-		subTitle: 'Game Developer',
+		title: 'Loream Ipsum',
+		subTitle: 'Developer',
 		date: 'Oct 2023 - Present',
 	},
 ];

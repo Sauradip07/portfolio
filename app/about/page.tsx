@@ -52,7 +52,7 @@ const About = () => {
 							style={{ height: '100%', width: '100%' }}
 						/>
 						<div className={`${styles.collegeHero} collegeHero p-2`}>
-							<h1 className="text-3xl text-white font-bold">AEC </h1>
+							<h1 className="text-3xl text-white font-bold">Asansol Engineering College</h1>
 							<p className="text-lg text-white font-medium">Asansol, India</p>
 						</div>
 					</div>
