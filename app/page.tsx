@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image';
 import ScreenWrapper from './components/screenwrapper/screenwrapper';
-
 import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
 
