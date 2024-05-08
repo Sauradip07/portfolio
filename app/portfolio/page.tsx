@@ -9,7 +9,7 @@ const Portfolio = () => {
 		<ScreenWrapper animateSplash={false} animateNavbar={false}>
 			<div className={styles.wrapper}>
 				<div className={styles.container}>
-					<h1>My Portfolio</h1>
+					<h1>My Project</h1>
 					<p>
 						Bringing creativity and functionality together to build seamless web solutions as a versatile
 						full stack developer.

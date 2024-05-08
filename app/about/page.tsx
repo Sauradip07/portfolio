@@ -11,29 +11,30 @@ const About = () => {
 				<div className={styles.left}>
 					<h1>About Me</h1>
 					<p>
-						Beginning my educational journey at St. Stephen&rsquo;s School in Dum Dum, Kolkata, I pursued
+						Beginning my educational journey at Eastern Railway Higher Secondary School in Asansol, West Bengal, I pursued
 						the Science stream, laying the groundwork for my future endeavors. Transitioning to higher
-						education, I enrolled at NIT Durgapur to pursue a Bachelor&rsquo;s degree in Mechanical
+						education, I enrolled at Asansol Engineering College to pursue a Bachelor&rsquo;s degree in Computer Science and 
 						Engineering.
 						<br />
 						<br />
-						During my time at NIT Durgapur, I embarked on a journey into the world of technology. In my
+						During my time at Asansol Engineering College, I embarked on a journey into the world of technology. In my
 						first year, I started exploring full stack development. As I progressed into my sophomore year,
-						I ventured into creating complex applications using React Native, alongside Django and Flask for
+						I ventured into creating complex applications using React, alongside Nodejs and Flask for
 						backend development. Throughout the remainder of my college years, I continued to expand my
-						skill set, delving into technologies such as Devops, Flutter, and more.
+						skill set, delving into technologies such as Devops, and more.
 						<br />
-						<br />I am currently working as a <strong>Game Developer</strong> at <strong>Cuemath !</strong>
+						<br />
+						I'm currently contributing to <strong>open source</strong> projects alongside building my own projects!
 					</p>
 				</div>
 				<div className={styles.right}>
 					<div className={`${styles.school} school`}>
 						<div className={`${styles.schoolHero} schoolHero p-2`}>
-							<h1 className="text-3xl text-white font-bold">St Stephen&rsquo;s School</h1>
-							<p className="text-lg text-white font-medium">Kolkata, India</p>
+							<h1 className="text-3xl text-white font-bold">Eastern Railway Higher Secondary School</h1>
+							<p className="text-lg text-white font-medium">Asansol, India</p>
 						</div>
 						<Image
-							src="/assets/images/school.jpeg"
+							src="/assets/images/school.jpg"
 							alt="school"
 							width={0}
 							height={0}
@@ -43,7 +44,7 @@ const About = () => {
 					</div>
 					<div className={`${styles.college} college`}>
 						<Image
-							src="/assets/images/college.jpg"
+							src="/assets/images/college.png"
 							alt="college"
 							width={0}
 							height={0}
@@ -51,8 +52,8 @@ const About = () => {
 							style={{ height: '100%', width: '100%' }}
 						/>
 						<div className={`${styles.collegeHero} collegeHero p-2`}>
-							<h1 className="text-3xl text-white font-bold">NIT Durgapur</h1>
-							<p className="text-lg text-white font-medium">Durgapur, India</p>
+							<h1 className="text-3xl text-white font-bold">AEC </h1>
+							<p className="text-lg text-white font-medium">Asansol, India</p>
 						</div>
 					</div>
 					<svg width="323" height="511" viewBox="0 0 323 511" fill="none" xmlns="http://www.w3.org/2000/svg">

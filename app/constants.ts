@@ -1,8 +1,10 @@
+import { link } from "fs";
+
 export const NavbarUrls = {
 	ABOUT: { name: 'About', url: '/about' },
 	EXPERIENCES: { name: 'Experiences', url: '/experiences' },
 	SKILLS: { name: 'Skills', url: '/skills' },
-	PORTFOLIO: { name: 'Portfolio', url: '/portfolio' },
+	PORTFOLIO: { name: 'Project', url: '/portfolio' },
 	CONTACT: { name: 'Contact', url: '/contact' },
 };
 
@@ -117,21 +119,25 @@ export const MyContacts = [
 	{
 		asset: '/assets/icons/contact/email.svg',
 		title: 'Email',
-		content: 'rishav.nitdgp24@gmail.com',
+		content: 'sauradip96ghosh@gmail.com',
+		link: '#',
 	},
 	{
 		asset: '/assets/icons/contact/linkedin.svg',
 		title: 'LinkedIn',
-		content: 'rishav-devraj',
+		content: 'sauradip-ghosh-726742222',
+		link: 'https://www.linkedin.com/in/sauradip-ghosh-726742222/',
 	},
 	{
 		asset: '/assets/icons/contact/github.svg',
 		title: 'Github',
-		content: 'rishav-jha-mech',
+		content: 'Sauradip07 ',
+		link: 'https://github.com/Sauradip07',
 	},
 	{
 		asset: '/assets/icons/contact/location.svg',
 		title: 'Location',
-		content: 'Bangalore, India',
+		content: 'Asansol, India',
+		link: '#',
 	},
 ];

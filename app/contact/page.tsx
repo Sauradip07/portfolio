@@ -14,15 +14,29 @@ const ContactMe = () => {
 				</p>
 				<section className={styles.contactMe}>
 					<div className={styles.left}>
-						{MyContacts.map(({ asset, title, content }, index) => (
+						{MyContacts.map(({ asset, title, content,link }, index) => (
 							<div key={index} className={styles.cardItem}>
-								<div className={styles.icon}>
-									<Image src={asset} alt={title} width={40} height={40} />
-								</div>
-								<div className={styles.content}>
-									<h2>{title}</h2>
-									<p>{content}</p>
-								</div>
+								{link === '#' ? (
+									<div>
+										<div className={styles.icon}>
+											<Image src={asset} alt={title} width={40} height={40} />
+										</div>
+										<div className={styles.content}>
+											<h2>{title}</h2>
+											<p>{content}</p>
+										</div>
+									</div>
+									) : (
+									<a href={link} target="_blank">
+										<div className={styles.icon}>
+											<Image src={asset} alt={title} width={40} height={40} />
+										</div>
+										<div className={styles.content}>
+											<h2>{title}</h2>
+											<p>{content}</p>
+										</div>
+									</a>
+								)}
 							</div>
 						))}
 					</div>
@@ -44,7 +58,7 @@ const ContactMe = () => {
 						width={20}
 						height={20}
 					/>
-					<span>Rishav Jha 2024</span>
+					<span>Sauradip Ghosh 2024</span>
 				</div>
 			</div>
 		</ScreenWrapper>
