@@ -15,35 +15,20 @@ export const MyExperiences = [
 		date: 'March 2023 - May 2023',
 	},
 	{
-		title: 'Loream Ipsum',
-		subTitle: 'Full Stack Developer',
-		date: 'Dec 2021 - March 2022',
+		title: 'Paymatrix',
+		subTitle: 'Full Stack Developer Intren',
+		date: 'May 2024 - July 2024',
 	},
 	{
-		title: 'Loream Ipsum',
-		subTitle: 'Developer',
-		date: 'Jan 2022 - May 2022',
+		title: 'LFX Mentorship 2024 @ Hyperledger Foundation',
+		subTitle: 'Software Developer Intren',
+		date: 'June 2024 - Present',
 	},
 	{
 		title: 'Loream Ipsum',
 		subTitle: 'Developer',
 		date: 'April 2022 - May 2022',
 	},
-	// {
-	// 	title: 'Loream Ipsum',
-	// 	subTitle: 'Developer',
-	// 	date: 'May 2022 - Present',
-	// },
-	// {
-	// 	title: 'Loream Ipsum',
-	// 	subTitle: 'Intern',
-	// 	date: 'May 2023 - July 2023',
-	// },
-	// {
-	// 	title: 'Loream Ipsum',
-	// 	subTitle: 'Open Source Contributor',
-	// 	date: 'May 2023 - Oct 2023',
-	// },
 	{
 		title: 'Loream Ipsum',
 		subTitle: 'Developer',
@@ -66,7 +51,7 @@ export const MySkills = [
 		children: [
 			['React JS', 'Next JS', 'Jest'],
 			['Recoil', 'Redux'],
-			['Flask', 'Express JS'],
+			['FastAPI', 'Express JS'],
 			['Material UI', 'Bootstrap', 'Tailwind', ],
 			['Aceternity UI', 'Shadcn UI']
 		],

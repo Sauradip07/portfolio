@@ -13,7 +13,7 @@ const Home = () => {
 	};
 
 	const downloadResume = () => {
-		const googleDriveLink = 'https://drive.google.com/file/d/18pGCB2JMQ5YSvjw8XzdoMCU7FG8LVQZp/view?usp=sharing';
+		const googleDriveLink = 'https://drive.google.com/file/d/1cUFu65VhED62q-Z0cw4pNv9yO4W7LXml/view?usp=sharing';
 
 		// Open the Google Drive link in a new tab
 		window.open(googleDriveLink, '_blank');
