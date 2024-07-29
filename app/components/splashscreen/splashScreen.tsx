@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { useEffect, useRef } from 'react';
 import styles from './splashscreen.module.css';
 import { useGSAP } from '@gsap/react';
+import AnimatedCursor from 'react-animated-cursor';
 
 type Props = {
 	animationCompleted: () => void;
@@ -53,12 +54,27 @@ const SplashScreen: React.FC<Props> = ({ animationCompleted }) => {
 	);
 
 	return (
+		<>
+		<AnimatedCursor
+			innerSize={8}
+			outerSize={35}
+			innerScale={1}
+			outerScale={2}
+			outerAlpha={0}
+			innerStyle={{
+				backgroundColor: 'rgb(0, 0, 0)',
+			}}
+			outerStyle={{
+				border: '3px solid rgb(0, 0, 0)',
+			}}
+		/>
 		<div className={styles.background} ref={splashScreenRef} id={'splash'}>
 			<div id="circle" className={styles.circle} style={{ opacity: 0 }} />
 			<div id="title" className={styles.title} style={{ opacity: 0 }}>
 				SG.
 			</div>
 		</div>
+		</>
 	);
 };
 

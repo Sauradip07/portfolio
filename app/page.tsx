@@ -3,6 +3,9 @@ import Image from 'next/image';
 import ScreenWrapper from './components/screenwrapper/screenwrapper';
 import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
+// import Cussor from './components/Cussor';
+import AnimatedCursor from "react-animated-cursor";
+import dynamic from 'next/dynamic';
 
 const Home = () => {
 
@@ -18,9 +21,31 @@ const Home = () => {
 		// Open the Google Drive link in a new tab
 		window.open(googleDriveLink, '_blank');
 	};
+
+
+	const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+		ssr: false,
+	});
+
 	
 	return (
+		<>
+		{/* <Cussor /> */}
+		<AnimatedCursor
+			innerSize={8}
+			outerSize={35}
+			innerScale={1}
+			outerScale={2}
+			outerAlpha={0}
+			innerStyle={{
+				backgroundColor: 'rgb(0, 0, 0)',
+			}}
+			outerStyle={{
+				border: '3px solid rgb(0, 0, 0)',
+			}}
+		/>
 		<ScreenWrapper animateSplash={false} animateNavbar={true}>
+			
 			<section className={styles.wrapper}>
 				<section className={styles.container}>
 					<div className={styles.left}>
@@ -53,6 +78,7 @@ const Home = () => {
 				</section>
 			</section>
 		</ScreenWrapper>
+		</>
 	);
 };
 

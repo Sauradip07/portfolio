@@ -2,9 +2,25 @@ import ScreenWrapper from '@/components/screenwrapper/screenwrapper';
 import { MyContacts } from '@/constants';
 import styles from './contact.module.css';
 import Image from 'next/image';
+import AnimatedCursor from 'react-animated-cursor';
 
 const ContactMe = () => {
 	return (
+		<>
+		<AnimatedCursor
+			innerSize={8}
+			outerSize={35}
+			innerScale={1}
+			outerScale={2}
+			outerAlpha={0}
+			innerStyle={{
+				backgroundColor: 'rgb(0, 0, 0)',
+			}}
+			outerStyle={{
+				border: '3px solid rgb(0, 0, 0)',
+			}}
+		/>
+		
 		<ScreenWrapper animateSplash={false} animateNavbar={false}>
 			<div className={styles.container}>
 				<h1>Contact Me</h1>
@@ -62,6 +78,7 @@ const ContactMe = () => {
 				</div>
 			</div>
 		</ScreenWrapper>
+		</>
 	);
 };
 

@@ -5,6 +5,7 @@ import SplashScreen from '../splashscreen/splashScreen';
 import Navbar from '../navbar/navbar';
 import { usePathname } from 'next/navigation';
 import { NavbarUrls } from '@/constants';
+import AnimatedCursor from 'react-animated-cursor';
 
 type ScreenWrapperProps = {
 	animateSplash: boolean;
@@ -24,6 +25,20 @@ const ScreenWrapper = ({ children, animateSplash, animateNavbar }: ScreenWrapper
 	}, [animateSplashScreen, animateNavbar]);
 
 	return (
+		<>
+		<AnimatedCursor
+			innerSize={8}
+			outerSize={35}
+			innerScale={1}
+			outerScale={2}
+			outerAlpha={0}
+			innerStyle={{
+				backgroundColor: 'rgb(0, 0, 0)',
+			}}
+			outerStyle={{
+				border: '3px solid rgb(0, 0, 0)',
+			}}
+		/>
 		<section>
 			{animateSplashScreen && (
 				<SplashScreen animationCompleted={() => onSplashAnimationDone(animateNavbar, setAnimateSplashScreen)} />
@@ -31,6 +46,7 @@ const ScreenWrapper = ({ children, animateSplash, animateNavbar }: ScreenWrapper
 			<Navbar animate={animateNavbar} showMenu={showMenu} setShowMenu={setShowMenu} />
 			{!showMenu && <main id={pathName.replaceAll('/', '')}>{children}</main>}
 		</section>
+		</>
 	);
 };
 

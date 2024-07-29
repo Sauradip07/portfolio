@@ -3,9 +3,24 @@ import styles from './portfolio.module.css';
 import { MyPortfolio } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimatedCursor from 'react-animated-cursor';
 
 const Portfolio = () => {
 	return (
+		<>
+		<AnimatedCursor
+			innerSize={8}
+			outerSize={35}
+			innerScale={1}
+			outerScale={2}
+			outerAlpha={0}
+			innerStyle={{
+				backgroundColor: 'rgb(0, 0, 0)',
+			}}
+			outerStyle={{
+				border: '3px solid rgb(0, 0, 0)',
+			}}
+		/>
 		<ScreenWrapper animateSplash={false} animateNavbar={false}>
 			<div className={styles.wrapper}>
 				<div className={styles.container}>
@@ -28,6 +43,7 @@ const Portfolio = () => {
 				</div>
 			</div>
 		</ScreenWrapper>
+		</>
 	);
 };
 

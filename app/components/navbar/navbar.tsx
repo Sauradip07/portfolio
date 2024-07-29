@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import styles from './navbar.module.css';
 import { NavbarUrls } from '@/constants';
 import { usePathname } from 'next/navigation';
+import AnimatedCursor from 'react-animated-cursor';
 
 type Props = {
 	animate: boolean;
@@ -21,6 +22,20 @@ const Navbar: React.FC<Props> = ({ animate, showMenu, setShowMenu }) => {
 	};
 
 	return (
+		<>
+		<AnimatedCursor
+			innerSize={8}
+			outerSize={35}
+			innerScale={1}
+			outerScale={2}
+			outerAlpha={0}
+			innerStyle={{
+				backgroundColor: 'rgb(0, 0, 0)',
+			}}
+			outerStyle={{
+				border: '3px solid rgb(0, 0, 0)',
+			}}
+		/>
 		<div className={styles.navWrapper}>
 			<nav className={styles.navbar} id={'navbar'} style={{ opacity: animate ? 0 : 1 }}>
 				<a href="/">SG.</a>
@@ -42,6 +57,7 @@ const Navbar: React.FC<Props> = ({ animate, showMenu, setShowMenu }) => {
 				</ul>
 			</nav>
 		</div>
+		</>
 	);
 };
 
