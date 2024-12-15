@@ -16,32 +16,23 @@ export const MyExperiences = [
 	},
 	{
 		title: 'Paymatrix',
-		subTitle: 'Full Stack Developer Intren',
+		subTitle: 'Full Stack Developer Intern',
 		date: 'May 2024 - July 2024',
 	},
 	{
 		title: 'LFX Mentorship 2024 @ Hyperledger Foundation',
-		subTitle: 'Software Developer Intren',
+		subTitle: 'Software Developer Intern',
 		date: 'June 2024 - Present',
 	},
-	{
-		title: 'Loream Ipsum',
-		subTitle: 'Developer',
-		date: 'April 2022 - May 2022',
-	},
-	{
-		title: 'Loream Ipsum',
-		subTitle: 'Developer',
-		date: 'Oct 2023 - Present',
-	},
+
 ];
 
 export const MySkills = [
 	{
 		title: 'Languages',
 		children: [
-			['C', 'C++', 'Java', 'Javascript', 'Typescript', 'Python'],
-			['SQL' ,'HTML', 'CSS', 'SCSS'],
+			['C', 'C++', 'Java', 'Javascript', 'Typescript'],
+			['SQL' ,'HTML', 'CSS'],
 		],
 		textColor: '--secondary-color',
 		backgroundColor: '--primary-color',
@@ -49,20 +40,21 @@ export const MySkills = [
 	{
 		title: 'Frameworks & Libraries',
 		children: [
-			['React JS', 'Next JS', 'Jest'],
+			['React JS', 'Next JS', 'Node JS'],
 			['Recoil', 'Redux'],
+			['Tailwind', 'Shadcn UI','Material UI'],
 			['FastAPI', 'Express JS'],
-			['Material UI', 'Bootstrap', 'Tailwind', ],
-			['Aceternity UI', 'Shadcn UI']
+			
 		],
 		textColor: '--primary-color',
 		backgroundColor: '--light-grey',
 	},
 	{
-		title: 'DevOps & Version Control',
+		title: 'Tools & Technologies',
 		children: [
-			['Linux', 'Docker', 'Kubernetes','AWS EC2', 'AWS S3', 'AWS ECS'],
-			['Git', 'Github'],
+			['Linux', 'Docker', 'Kubernetes', 'Github Actions'],
+			['AWS(EC2, S3)','kafka','Redis','MongoDB','PostgreSQL'],
+			['Git', 'Github', ],
 		],
 		textColor: '--primary-color',
 		backgroundColor: '--secondary-grey',
